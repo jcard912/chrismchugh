@@ -1,0 +1,447 @@
+/*
+Global Styles
+*/
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+
+#wrap {
+  min-height: 100%;
+  padding-bottom: 6rem;
+}
+
+.navbar,
+h3,
+h5,
+h6 {
+    letter-spacing: 1.2px;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+h5,
+.fa-envelope,
+.fa-phone {
+    font-size: 2.5rem;
+}
+
+h6 {
+    font-size: 2rem;
+}
+
+#about, #resume, #media, #contact {
+    padding: 5rem 0 10rem 0;
+}
+
+/*
+Buttons
+*/
+
+.btn {
+    margin-top: 3rem;
+    padding: 5px 15px;
+    background: none;
+    border: 3px solid #285caa;
+    color: #285caa;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+}
+
+.btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: #285caa;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+  top: 0;
+}
+
+/*
+Navbar 
+*/
+
+.navbar {
+    border: none;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 5rem;
+    height: 8rem;
+}
+
+.navbar-toggle {
+    height: 4rem;
+    margin-top: 2rem;
+}
+
+.brand-nav-image {
+    height: 100%;
+}
+
+.navbar-default .navbar-nav > .active > a {
+   background-color: #d9d9d9;
+   color: black;
+ }
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #285caa;
+    color: #fff;
+}
+
+/*
+Main / Index Page
+*/
+.body-index {
+  background: url('../images/chris-index.jpg') no-repeat 0% 10%;
+  background-size: cover;
+}
+
+.navbar-index {
+  background: none;
+}
+
+.navbar-index .collapse .navbar-right {
+  margin: 2rem 15rem 0 0;
+}
+
+.navbar-index .container-fluid .collapse .nav li a {
+  color: white;
+  font-size: 1.7rem;
+  letter-spacing: 4px;
+}
+
+.navbar-index .container-fluid .collapse .nav li a:hover {
+  background: none;
+  color: #cccccc;
+}
+
+#main img {
+  max-width: 65rem;
+  margin: 0 17rem 0 0;
+  float: right;
+}
+
+/*
+About Section / Page
+*/
+
+/*
+Background-image style in about.html to allow user to change image
+*/
+#about {
+  height: 90%;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  overflow: auto;
+}
+
+#about-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-size: contain !important;
+  background-position: 98% !important ;
+  background-repeat: no-repeat !important;
+}
+
+#about p {
+    margin-top: 3rem;
+    font-size: 1.75rem;
+    line-height: 3rem;
+}
+
+/*
+Resume Section / Page
+*/
+
+#resume {
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 6rem;
+}
+
+#resume .col-xs-12 {
+  text-align: center;
+}
+
+#resume-image {
+  width: inherit; 
+}
+
+/*
+Contact Page
+*/
+
+#contact {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 6rem;
+    overflow: auto;
+}
+
+#contact-wrap {
+  max-width: 1200px;
+  min-height: 40rem;
+  margin: 0 auto;
+  background-size: contain !important;
+  background-position: 97% !important ;
+  background-repeat: no-repeat !important;
+}
+
+#contact a {
+  color: #000;
+}
+
+#contact a:hover {
+  text-decoration:none;
+}
+
+h3 span {
+  color: #285caa;
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+.contact-info li {
+  display: inline-block;
+}
+
+.fa-envelope {
+  padding-right: 1.5rem;
+  color: #285caa;
+}
+
+.fa-phone {
+  padding-right: 1.5rem;
+  color: #285caa;
+}
+
+/*
+Footer
+*/
+
+footer {
+  position: relative;
+  clear: both;
+  background-color: #f8f8f8;
+  height: 6rem;
+  margin-top: -6rem;
+  overflow: hidden;
+}
+
+footer .container {
+  height: inherit;
+}
+
+footer .row {
+  height: inherit;
+}
+
+footer .col-xs-6 {
+  display: table;
+  height: inherit;
+}
+
+footer .image-container {
+  height: 3rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer a {
+  height: inherit;  
+}
+
+.footer-image {
+  height: inherit;
+}
+
+.copyright {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.copyright .copy-text {
+  display: inline-block;
+  float: right;
+}
+
+/*
+Media Queries
+*/
+
+@media only screen and (max-width : 1200px) {
+  /*Main Index Page*/
+  .navbar-index .collapse .navbar-right {
+    margin-right: 0rem;
+  }
+
+  #main img {
+    max-width: 50rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width : 1000px) {
+  .brand-nav-image {
+    height: 90%;
+  }
+
+  #about-wrap {
+    background-size: cover !important;
+    background-position: 0% 10% !important;
+    margin-top: -5rem;
+
+  }
+
+  #about .container {
+    background: rgba(255,255,255,0.7);
+    padding: 5rem;
+    margin-top: 5rem;
+  }
+
+  #contact-wrap {
+    background-size: cover !important;
+    background-position: 0% 15% !important;
+    height: 100%;
+    margin-top: -8rem;
+    text-align: center;
+
+  }
+
+  #contact .container {
+    background: rgba(255,255,255,0.7);
+    padding: 15rem 2rem;
+    margin-top: 8rem;
+  }
+
+  #resume-image {
+    margin-top: -2rem;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    width: 100%;
+  }
+
+  .navbar-index .navbar-toggle {
+    position: absolute;
+    z-index: 9;
+    right: 3rem;
+    top: 2rem;
+  }
+
+  .navbar-index .collapse {
+  background: #f8f8f8;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  }
+
+  .navbar-index .container-fluid .collapse .nav li a {
+  color: black;
+  }
+
+  #about, #media, #resume {
+    margin-top: 4rem;
+  }
+  
+  #main {
+    text-align: center;
+  }
+
+  #main img {
+  max-width: 100%;
+  float: none;
+  margin-top: 50rem;
+  }
+  
+  #about {
+    background-position: 60% 20% !important;
+  }
+
+   #contact .container {
+    margin-top: 20rem;
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+  .brand-nav-image {
+    height: 50%;
+    margin-top: 1.25rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h5, h6 {
+    font-size: 1.75rem;
+  }
+
+  #about p, p {
+    line-height: 2rem;
+    font-size: 1.25rem;
+  }
+
+  #resume-image {
+    margin-top: 0;
+  }
+
+  .footer-image {
+  height: 2rem;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+    h5, h6 {
+    font-size: 1.25rem;
+  }
+
+  .footer-image {
+    height: 1.75rem;
+  }
+}
